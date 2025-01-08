@@ -26,7 +26,7 @@ public class API {
 
 			String token = "23470639081006338F4A440DD441E9EC288EA8714A996";
 
-			String requestBody = "{\"amount\": \"100\", \"email\": \"kanika02@nagarro.com\",\"customerName\": \"Kanika\", \"isAPI\": false,\"currency\": \"NGN\" }";
+			String requestBody = "{\"amount\": \"100\", \"email\": \"test132637@test.com\",\"customerName\": \"Test\", \"isAPI\": false,\"currency\": \"NGN\" }";
 
 			ResponseBody body = RestAssured.given().header("Authorization", "Bearer " + token)
 					.contentType(ContentType.JSON).body(requestBody).post("/initiate-payment").getBody();
